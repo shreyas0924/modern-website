@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <nav className='flex w-full py-6 justify-between items-center'>
       <img src={logo} alt='hooback' className='w-[120px] h-[32px] ' />
-      {/* Desktop */}
+      {/* Desktop view  */}
       <ul className='list-none flex-1 justify-end items-center sm:flex hidden'>
         {navLinks.map((nav, index) => (
           <li key={nav.id} className={`font-poppins font-normal cursor-pointer text-white text-[16px] ${index === navLinks.length-1 ? 'mr-0' : 'mr-10' } `} > 
@@ -20,7 +20,7 @@ const Navbar = () => {
         ))}
       </ul>
 
-      {/* Mobile*/}
+      {/* Mobile view */}
       <div className='sm:hidden flex flex-1 justify-end items-center'>
           <img 
             src={toggle ? close : menu} 
